@@ -1,0 +1,12 @@
+@import "../../style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lilita+One&family=PT+Serif&family=Rowdies&display=swap');
+
+
+.posts{
+        @include themify($themes) {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                background-color: themed("bgColor");
+        }
+}

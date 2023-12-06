@@ -1,0 +1,51 @@
+@import "../../style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lilita+One&family=PT+Serif&family=Rowdies&display=swap');
+
+.home {
+        @include themify($themes) {
+                background-color: themed("bgSoft");
+                padding: 20px 70px;
+
+                @include mobile{
+                        padding: 10px;
+                }
+                @include tablet{
+                        padding: 20px;
+                }
+                font-family: 'PT Serif', serif;
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+
+                .container{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 50px;
+                        color: themed("textColor");
+                        .dsaPic{
+                                width: 500px;
+                                height: 500px;
+                        }
+                        h1{
+                                font-family: 'Lilita One', sans-serif;
+                                font-weight: 500;
+                                font-size: 50px;
+                        }
+                        p{
+                                
+                                
+                                font-size: 20px;
+                        }
+                        button{
+                                background-color: blue;
+                                color: white;
+                                width: 120px;
+                                height: 50px;
+                                border-radius: 50px  50px;
+                                border: none;
+                                cursor: pointer;
+                        }
+                }
+        }
+}
