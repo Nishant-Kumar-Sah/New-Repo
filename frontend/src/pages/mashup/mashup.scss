@@ -91,7 +91,7 @@
                                         justify-content: space-between;
                                         gap: 20px;
 
-                                       
+
 
                                         .inputLabel {
                                                 color: themed("textColorSoft") !important
@@ -123,11 +123,40 @@
                         color: themed("textColor");
 
 
-                        .container {
+                        .problem-container {
                                 padding: 20px;
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+                                .title {
+                                        width: 250px;
+                                        
+                                }
+                                .problem-buttons{
+                                        
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        .btn-Link {
+                                                width: 60px;
+                                                border-radius: 10px;
+                                                height: 30px;
+                                                border: none;
+                                                color: white;
+                                                cursor: pointer;
+                                                background-color: #52a3ff;
+                                        }
+                                        .btn-delete {
+                                                width: 60px;
+                                                border-radius: 10px;
+                                                height: 30px;
+                                                border: none;
+                                                color: white;
+                                                cursor: pointer;
+                                                background-color: #ff5258;
+
+                                        }
+                                }
                         }
                 }
         }
