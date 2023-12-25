@@ -33,9 +33,9 @@ const Navbar = () => {
                                 <Link to = "/CP" style={{textDecoration:"none"}}>
                                         <span>Competitive Programming</span>
                                 </Link>
-                                <Link to = "/DSA" style={{textDecoration:"none"}}>
+                                {/* <Link to = "/DSA" style={{textDecoration:"none"}}>
                                         <span>Data Structures</span>
-                                </Link>
+                                </Link> */}
                                 <Link to = "/Puzzles" style={{textDecoration:"none"}}>
                                         <span>Puzzles</span>
                                 </Link>

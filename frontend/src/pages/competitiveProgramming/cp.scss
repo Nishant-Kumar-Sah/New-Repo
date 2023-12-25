@@ -1,0 +1,61 @@
+@import "../../style.scss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lilita+One&family=PT+Serif&family=Rowdies&display=swap');
+
+
+.Cp {
+        @include themify($themes) {
+                background-color: themed("bgSoft");
+                padding: 20px 70px;
+                min-height: 100vh;
+
+                @include mobile {
+                        padding: 10px;
+                }
+
+                @include tablet {
+                        padding: 20px;
+                }
+
+                color: themed("textColor");
+                font-family: 'PT Serif',
+                serif;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+
+                .topicInfo {
+                        font-family: 'Josefin Sans', sans-serif;
+                        -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+                        -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+                        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+                        border-radius: 20px;
+                        background-color: themed("bg");
+                        color: themed("textColor");
+
+
+                        .problem-container {
+                                padding: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                .title {
+                                        width: 250px;
+                                        font-size: larger;
+                                        font-weight: 400;
+                                        font-family: 'Lilita One', sans-serif;
+
+                                }
+                                li{
+                                        a{
+                                                text-decoration: none;
+                                                color: themed("textColorSoft");
+                                        }
+                                }
+
+
+                        }
+                }
+        }
+}

@@ -159,7 +159,7 @@ function App() {
                                 },
                                 {
                                         path:"/Puzzles",
-                                        element: <Blogs/>,  
+                                        element: <Home/>,  
                                 },
                         ],
                 },
